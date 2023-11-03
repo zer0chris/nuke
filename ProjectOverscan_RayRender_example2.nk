@@ -1,0 +1,241 @@
+set cut_paste_input [stack 0]
+version 11.1 v1
+Camera2 {
+ inputs 0
+ read_from_file true
+ rotate {0 {curve x1 0 x50 -20} 0}
+ focal {{curve x26 50}}
+ name Camera7
+ label MASTER
+ selected true
+ xpos 22
+ ypos 4183
+}
+CheckerBoard2 {
+ inputs 0
+ name CheckerBoard8
+ selected true
+ xpos 305
+ ypos 3700
+}
+set Nd7cc9180 [stack 0]
+Sphere {
+ translate {1.065000057 0 -0.350001812}
+ uniform_scale 0.19
+ name Sphere3
+ selected true
+ xpos 84
+ ypos 3977
+}
+push $cut_paste_input
+Reflection {
+ name Reflection3
+ selected true
+ xpos 429
+ ypos 3975
+}
+Card2 {
+ render_mode textured+wireframe
+ translate {0 0.03400000185 -1.085000038}
+ uniform_scale 1.7
+ control_points {3 3 3 6 
+
+1 {-0.5 -0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0 0 0} 
+1 {0 -0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0.5 0 0} 
+1 {0.5 -0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {1 0 0} 
+1 {-0.5 0 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0 0.5 0} 
+1 {0 0 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0.5 0.5 0} 
+1 {0.5 0 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {1 0.5 0} 
+1 {-0.5 0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0 1 0} 
+1 {0 0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0.5 1 0} 
+1 {0.5 0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {1 1 0} }
+ name Card11
+ selected true
+ xpos 397
+ ypos 4056
+}
+push $Nd7cc9180
+Card2 {
+ render_mode textured+wireframe
+ translate {0 0.03400000185 0.1949999928}
+ uniform_scale 1.5
+ control_points {3 3 3 6 
+
+1 {-0.5 -0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0 0 0} 
+1 {0 -0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0.5 0 0} 
+1 {0.5 -0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {1 0 0} 
+1 {-0.5 0 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0 0.5 0} 
+1 {0 0 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0.5 0.5 0} 
+1 {0.5 0 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {1 0.5 0} 
+1 {-0.5 0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0 1 0} 
+1 {0 0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0.5 1 0} 
+1 {0.5 0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {1 1 0} }
+ name Card12
+ selected true
+ xpos 305
+ ypos 3957
+}
+push 0
+Scene {
+ inputs 4
+ name Scene8
+ selected true
+ xpos 315
+ ypos 4138
+}
+push 0
+RayRender {
+ inputs 3
+ name RayRender4
+ selected true
+ xpos 305
+ ypos 4304
+}
+LensDistortion2 {
+ distortionModelDisplayX "xu = xd / (1 + k0 * rd^2 + k1 * rd^4)"
+ distortionModelDisplayY "yu = yd / (1 + k0 * rd^2 + k1 * rd^4)"
+ distortionDenominator0 0.05
+ output Undistort
+ featuresKnob "
+version 1
+entries 0
+entries 0
+"
+ name LensDistortion1
+ selected true
+ xpos 305
+ ypos 4457
+}
+Camera {
+ inputs 0
+ rotate {0 {curve x1 0 x50 -20} 0}
+ focal {{1/Reformat3.scale*curve x26 50}}
+ name Camera9
+ label MASTER
+ selected true
+ xpos -950
+ ypos 4114
+}
+set Nef1fb880 [stack 0]
+CheckerBoard2 {
+ inputs 0
+ name CheckerBoard7
+ selected true
+ xpos -545
+ ypos 3666
+}
+set Nef285c00 [stack 0]
+Sphere {
+ translate {1.065000057 0 -0.350001812}
+ uniform_scale 0.19
+ name Sphere2
+ selected true
+ xpos -811
+ ypos 3865
+}
+Reflection {
+ inputs 0
+ name Reflection2
+ selected true
+ xpos -421
+ ypos 3861
+}
+Card2 {
+ render_mode textured+wireframe
+ translate {0 0.03400000185 -1.085000038}
+ uniform_scale 1.7
+ control_points {3 3 3 6 
+
+1 {-0.5 -0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0 0 0} 
+1 {0 -0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0.5 0 0} 
+1 {0.5 -0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {1 0 0} 
+1 {-0.5 0 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0 0.5 0} 
+1 {0 0 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0.5 0.5 0} 
+1 {0.5 0 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {1 0.5 0} 
+1 {-0.5 0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0 1 0} 
+1 {0 0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0.5 1 0} 
+1 {0.5 0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {1 1 0} }
+ name Card9
+ selected true
+ xpos -453
+ ypos 3942
+}
+push $Nef285c00
+Card2 {
+ render_mode textured+wireframe
+ translate {0 0.03400000185 0.1949999928}
+ uniform_scale 1.5
+ control_points {3 3 3 6 
+
+1 {-0.5 -0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0 0 0} 
+1 {0 -0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0.5 0 0} 
+1 {0.5 -0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {1 0 0} 
+1 {-0.5 0 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0 0.5 0} 
+1 {0 0 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0.5 0.5 0} 
+1 {0.5 0 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {1 0.5 0} 
+1 {-0.5 0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0 1 0} 
+1 {0 0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0.5 1 0} 
+1 {0.5 0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {1 1 0} }
+ name Card10
+ selected true
+ xpos -545
+ ypos 3843
+}
+push $Nef1fb880
+Scene {
+ inputs 4
+ name Scene7
+ selected true
+ xpos -535
+ ypos 4015
+}
+Constant {
+ inputs 0
+ channels rgb
+ name Constant2
+ selected true
+ xpos -340
+ ypos 3981
+}
+Reformat {
+ type scale
+ scale 2
+ resize none
+ name Reformat3
+ label "REFORMAT_OVERSCAN\n(Put above Project3D)"
+ selected true
+ xpos -340
+ ypos 4104
+}
+RayRender {
+ inputs 3
+ name RayRender3
+ selected true
+ xpos -545
+ ypos 4209
+}
+Reformat {
+ type scale
+ scale 0.5
+ resize none
+ pbb true
+ name Reformat1
+ selected true
+ xpos -545
+ ypos 4421
+}
+LensDistortion2 {
+ distortionModelDisplayX "xu = xd / (1 + k0 * rd^2 + k1 * rd^4)"
+ distortionModelDisplayY "yu = yd / (1 + k0 * rd^2 + k1 * rd^4)"
+ distortionDenominator0 0.05
+ output Undistort
+ featuresKnob "
+version 1
+entries 0
+entries 0
+"
+ name LensDistortion2
+ selected true
+ xpos -545
+ ypos 4517
+}
