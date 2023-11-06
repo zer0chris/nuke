@@ -1,0 +1,33 @@
+#Random Random
+#Written by Chris Glew, February 2017, v1.0
+Group {
+ inputs 0
+ name Random_Random
+ selected true
+ xpos -255
+ ypos -214
+ addUserKnob {20 User}
+ addUserKnob {7 WaveLength R 1 12}
+ WaveLength {{"random((frame+(seed))/MASTER_wavelength) * (Maximum-Minimum) +(Minimum)" x1 2.85}}
+ addUserKnob {16 subWave}
+ subWave {{"WaveLength+random((frame+5)/SUB_wavelength) * (SUB_maximum-SUB_minimum) + SUB_minimum" x1 0.57 x51 0.045}}
+ addUserKnob {26 ""}
+ addUserKnob {7 SUB_wavelength R 0.2 2}
+ SUB_wavelength 1
+ addUserKnob {7 SUB_maximum R 0 3}
+ SUB_maximum 1
+ addUserKnob {7 SUB_minimum R -3 0}
+ SUB_minimum -1
+ addUserKnob {26 "" +STARTLINE}
+ addUserKnob {7 Maximum R 0 10}
+ Maximum 2
+ addUserKnob {7 Minimum R -10 0}
+ Minimum -2
+ addUserKnob {7 MASTER_wavelength R 1 8}
+ MASTER_wavelength 4.5
+ addUserKnob {7 seed R 1 20}
+ seed 4.8
+ addUserKnob {26 "" +STARTLINE}
+ addUserKnob {26 Random T "Random v1.0 | ©2017 chrisglew.com"}
+}
+end_group
